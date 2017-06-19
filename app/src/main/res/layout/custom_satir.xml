@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageViewFoto"
+        android:layout_width="108dp"
+        android:layout_height="116dp"
+        app:srcCompat="@android:drawable/screen_background_light_transparent" />
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="113dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:textStyle="bold"
+            android:text="İsim" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Doğum Tarihi:"
+                    android:layout_weight="0.34" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Boy"
+                    android:layout_weight="0.34" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kilo"
+                    android:layout_weight="0.40" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textViewBirthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="23.03.1994"
+                    android:layout_weight="0.40" />
+
+                <TextView
+                    android:id="@+id/textViewBoy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1.57"
+                    android:layout_weight="0.40" />
+
+                <TextView
+                    android:id="@+id/textViewKilo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="56"
+                    android:layout_weight="0.34" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewKulub"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        app:srcCompat="@android:drawable/screen_background_light_transparent" />
+
+</LinearLayout>
